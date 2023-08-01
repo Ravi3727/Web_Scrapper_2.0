@@ -1,11 +1,10 @@
 body, html {
     margin: 0;
-    font-family: sans-serif;
 }
 
 .content {
     margin: 0 auto;
-    width: 400px;
+    width: 800px;
 }
 
 table, td, th {
@@ -22,6 +21,7 @@ th {
 }
 
 td {
+    font-size: large;
     text-align: center;
     padding: 5px;
 }

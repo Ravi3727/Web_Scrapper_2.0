@@ -28,6 +28,9 @@ def index():
                 "div", {"class": "_1AtVbE col-12-12"})
             del bigboxes[0:3]
             box = bigboxes[0]
+
+            
+
             productLink = "https://www.flipkart.com" + \
                 box.div.div.div.a['href']
             prodRes = requests.get(productLink)
@@ -41,6 +44,15 @@ def index():
             headers = "Product, Customer Name, Rating, Heading, Comment \n"
             fw.write(headers)
             reviews = []
+
+
+            # overallRating = box[1].div.div.div
+            # aaa = overallRating.findAll('div',{"class":"_3LWZlK"})
+            # oVR = aaa[0].text
+
+            # overAllRating =  overallRating
+
+
             for commentbox in commentboxes:
                 try:
                     # name.encode(encoding='utf-8')
